@@ -15,8 +15,14 @@ DESCRIPTION
     Application for indexing and control of multiple copies of files on 
     removable devices.
     
-    In the atual state is just a script that reads a directory recursively, 
-    generates an MD5 hash of each file and writes the result to a log file.
+NEWS
+
+    16/06/2011 - I Will be adding more details about the features that I want 
+                 to add to this application.
+    
+    13/06/2011 - In the atual state is just a script that reads a directory
+                 recursively, generates an MD5 hash of each file and writes 
+                 the result to a log file.
 
 LICENSE
 
