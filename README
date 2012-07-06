@@ -1,22 +1,16 @@
-NAME
-
-    RCI - Random Copies Indexer
-    
-VERSION
-    
+RCI - Random Copies Indexer
+===========================
+### VERSION
     0.0.1 (far from being usefull)
 
-FILES
-
+### FILES
     rci.py
 
-DESCRIPTION
-
+### DESCRIPTION
     Application for indexing and control of multiple copies of files on 
     removable devices.
     
-NEWS
-
+### NEWS
     16/06/2011 - I Will be adding more details about the features that I want 
                  to add to this application.
     
@@ -24,8 +18,7 @@ NEWS
                  recursively, generates an MD5 hash of each file and writes 
                  the result to a log file.
 
-LICENSE
-
+### LICENSE
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
@@ -39,19 +32,15 @@ LICENSE
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
    
-AUTHOR
-
+### AUTHOR
     Andre Simoes
     
-COPYRIGHT
-
-    Copyright 2011, Andre Simoes
+### COPYRIGHT
+    Copyright &copy; 2011, Andre Simoes
     
-CREDITS
-    
+### CREDITS
     Andre Simoes - alsimoes(at)gmail-com
     
-MANTAINER
-
+### MANTAINER
     Andre Simoes - alsimoes(at)gmail-com
     
