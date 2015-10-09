@@ -53,14 +53,14 @@ def main(args):
     
     Example: rci.py C:\Temp
     """
-    CWD = os.path.normcase(args)
-    os.chdir(CWD)
+    cwd = os.path.normcase(args)
+    os.chdir(cwd)
     print "\nProcessing files. Please wait...\n"
-    _start_log(CWD)
-    readed_files = _read_files(CWD)
+    _start_log(cwd)
+    readed_files = _read_files(cwd)
     _finish_log(readed_files)
     nfile = _set_log_name()
-    print u'%i file(s) analyzed(s) in "%s".\nAnalysis results in "%s".' % (readed_files,CWD,nfile)
+    print u'%i file(s) analyzed(s) in "%s".\nAnalysis results in "%s".' % (readed_files,cwd,nfile)
 
     
 def _read_files(dir_path):
@@ -86,32 +86,34 @@ def _read_files(dir_path):
     
     return file_counter
 
+
 def _start_log(args):
-    LOG_PATH = os.path.join(_SCRIPT_PATH,_LOG_FILE)
-    file = open(LOG_PATH, 'w')
+    log_path = os.path.join(_SCRIPT_PATH,_LOG_FILE)
+    file = open(log_path, 'w')
     file.write(u'RCI RANDOM COPIES INDEXER\n\nStart directory: "%s"\n\n' % args)
     file.close()    
 
+
 def _write_log_line(nline):
-    LOG_PATH = os.path.join(_SCRIPT_PATH,_LOG_FILE)
-    file = open(LOG_PATH, 'a')
+    log_path = os.path.join(_SCRIPT_PATH,_LOG_FILE)
+    file = open(log_path, 'a')
     file.write(nline)
     file.close()
 
 
 def _finish_log(args):
-    LOG_PATH = os.path.join(_SCRIPT_PATH,_LOG_FILE)
-    file = open(LOG_PATH, 'a')
+    log_path = os.path.join(_SCRIPT_PATH,_LOG_FILE)
+    file = open(log_path, 'a')
     file.write(u'\n%i file(s) analyzed(s).' % args)
     file.close() 
 
 
 def _set_log_name():
-    LOG_PATH = os.path.join(_SCRIPT_PATH,_LOG_FILE)
-    #new_filename = ''
+    log_path = os.path.join(_SCRIPT_PATH,_LOG_FILE)
+    # new_filename = ''
     new_filename = ''.join([datetime.now().strftime("%Y%m%d%H%M%S"),'-','rci','.','log'])
     os.chdir(_SCRIPT_PATH)
-    os.rename(LOG_PATH,new_filename)
+    os.rename(log_path,new_filename)
     return new_filename
     
 
