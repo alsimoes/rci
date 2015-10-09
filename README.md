@@ -25,7 +25,7 @@ André Simões
 Copyright &copy; 2011, Andre Simoes
     
 ### CREDITS
-Andre Simoes - alsimoes(at)gmail-com
+Andre Simoes - developer(at)alsimoes-net
     
 ### MANTAINER
-Andre Simoes - alsimoes(at)gmail-com
+Andre Simoes - developer(at)alsimoes-net
